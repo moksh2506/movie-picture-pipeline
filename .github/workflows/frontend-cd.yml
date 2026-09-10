@@ -93,8 +93,10 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
+          BACKEND_URL: http://aa8cb9ddd7fe743718586cab585f8389-1330728316.us-east-1.elb.amazonaws.com
         run: |
           docker build \
+            --build-arg REACT_APP_MOVIE_API_URL=$BACKEND_URL \
             -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
             .
 
