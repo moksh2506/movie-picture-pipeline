@@ -1,3 +1,18 @@
+## Project Submission Links
+
+### GitHub Repository
+https://github.com/moksh2506/movie-picture-pipeline
+
+### Application URLs
+
+Frontend LoadBalancer URL:
+http://ae732ffc5aec3480fa8395442dc17fd3-505509390.us-east-1.elb.amazonaws.com/
+
+Backend LoadBalancer URL:
+http://aa8cb9ddd7fe743718586cab585f8389-1330728316.us-east-1.elb.amazonaws.com/movies
+
+### FOR SCREENSHOTS OF WORKFLOW AND APPLICATION PLEASE REFER PDF FILE (Screenshots.pdf) IN THE REPOSITORY.
+
 # Movie Picture Pipeline
 
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
